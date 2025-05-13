@@ -12,6 +12,7 @@ const montserrat = Montserrat({
 
 const libreBaskerville = Libre_Baskerville({
   variable: "--font-libreBaskerville",
+  subsets: ["latin"],
   weight:["400", "700"]
 });
 
