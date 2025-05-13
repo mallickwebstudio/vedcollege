@@ -1,10 +1,9 @@
 import Section from "@/components/site/section";
-import Image from "next/image";
-import InquiryForm from "./inquiry-form";
+import EnquiryForm from "./enquiry-form";
 
-export default function Inquiry() {
+export default function Enquiry() {
   return (
-    <Section className="relative bg-secondary" wrapperClassName="grid gap-8 md:grid-cols-2" id="inquiry">
+    <Section className="relative bg-secondary" wrapperClassName="grid gap-8 md:grid-cols-2" id="enquiry">
       {/* <div className="absolute top-0 right-0 h-full w-full aspect-square -z-10">
         <Image
           className="h-full w-fit object-cover opacity-5"
@@ -18,7 +17,7 @@ export default function Inquiry() {
       <div className="">
         <h2>Have Questions? Get Personalized Admission Support</h2>
         <p>Fill the quick form below. Our admissions counselor will reach out to guide you step-by-step.</p>
-        <InquiryForm />
+        <EnquiryForm />
       </div>
 
       <div className="size-full aspect-square rounded-md overflow-hidden border">

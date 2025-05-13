@@ -7,30 +7,30 @@ export default function Scope() {
   return (
     <Section>
       <h2 className="text-center">
-        <span>What Can You Do After BSW?</span>
+        <span>What Can You Do After MSW?</span>
       </h2>
 
       <div className="mx-auto mt-8 grid gap-6 md:w-1/2">
         {[
           {
-            title: "Social Worker",
-            description: "Work in government & NGOs to implement social welfare programs",
+            title: "Government Officer",
+            description: "Welfare Dept., Tribal Affairs, etc.",
           },
           {
-            title: "Civil Services",
-            description: "Pursue civil services with solid preparation and social understanding",
+            title: "NGO",
+            description: "Program Head / Project Coordinator",
           },
           {
-            title: "Higher Education",
-            description: "Eligible for MSW & other postgraduate degrees",
+            title: "HR",
+            description: "Roles in corporate CSR",
           },
           {
-            title: "Program Coordinator",
-            description: "Field Coordinator / Program Executive roles in social organizations",
+            title: "Social Policy",
+            description: "Consultant",
           },
           {
-            title: "Corporate Roles",
-            description: "Jobs in CSR, Welfare Departments, Rural Development",
+            title: "UGC NET / PhD in Social Work",
+            description: "In Social Work",
           },
         ].map((career, index) => (
           <FadeUp key={index + career.title}>

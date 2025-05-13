@@ -20,22 +20,20 @@ const footerLinks = [
 export default function Footer() {
     return (
         <footer className="border-t">
-            <div className="mx-auto container p-4 sm:px-8 md:px-12 lg:px-14">
+            <div className="mx-auto container p-4 py-8 sm:px-8 md:px-12 lg:px-14">
                 <div className="pb-4 flex justify-center items-center">
                     <div>
                         {/* Logo */}
-                        <div className="flex flex-col items-center">
-                            <Link className="relative block gap-8" href="/">
-                                <Image
-                                    className="size-20"
-                                    src="/images/logo/logo.png"
-                                    width={100}
-                                    height={100}
-                                    alt="Ved College Logo"
-                                />
-                            </Link>
+                        <Link className="relative flex flex-col items-center" href="/">
+                            <Image
+                                className="size-20"
+                                src="/images/logo/logo.png"
+                                width={100}
+                                height={100}
+                                alt="Ved College Logo"
+                            />
                             <span className="md:ml-2 font-bold font-serif">VED COLLEGE</span>
-                        </div>
+                        </Link>
 
                         <ul className="mt-6 flex items-center justify-center gap-4 flex-wrap">
                             {footerLinks.map(({ title, href }) => (

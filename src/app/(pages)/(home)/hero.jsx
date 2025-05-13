@@ -20,7 +20,7 @@ export default function Hero() {
                      Join VED BSW–MSW College and begin a journey of personal and professional transformation.
                 </p>
                 <div className="mt-12 flex items-center gap-4">
-                    <Link className={buttonVariants({ size: "lg" })} href="#inquiry">
+                    <Link className={buttonVariants({ size: "lg" })} href="#enquiry">
                         <Mail className="size-4" />
                         Inquire Now
                     </Link>

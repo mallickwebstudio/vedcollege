@@ -2,8 +2,9 @@ import { Geist, Geist_Mono, Libre_Baskerville, Montserrat } from "next/font/goog
 import "./globals.css";
 import Header from "@/components/site/header";
 import Footer from "@/components/site/footer";
-import Inquiry from "@/components/site/inquiry";
-import OverscreenInquiryButton from "@/components/site/overscreen-inquiry-button";
+import Enquiry from "@/components/site/enquiry";
+import OverscreenEnquiryButton from "@/components/site/overscreen-enquiry-button";
+import { Toaster } from "sonner";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -27,13 +28,14 @@ export default function RootLayout({ children }) {
       <body
         className={`${montserrat.className} ${montserrat.variable} ${libreBaskerville.variable} antialiased flex flex-col min-h-screen`}
       >
-        <OverscreenInquiryButton />
+        <OverscreenEnquiryButton />
         <Header />
         <div className="flex-1">
           {children}
         </div>
-        <Inquiry />
+        <Enquiry />
         <Footer />
+        <Toaster />
       </body>
     </html>
   );

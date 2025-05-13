@@ -13,7 +13,7 @@ export default function Page() {
       <Curriculum />
       <Scope />
       <Admission />
-      <FAQ />
+      {/* <FAQ /> */}
     </>
   )
 }
