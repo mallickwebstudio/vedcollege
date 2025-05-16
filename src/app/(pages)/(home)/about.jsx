@@ -1,9 +1,18 @@
 import Section from "@/components/site/section";
+import Image from "next/image";
 
 export default function About() {
     return (
         <Section className="relative bg-secondary" wrapperClassName="grid md:grid-cols-2 gap-8">
             <div className="bg-background rounded-md aspect-square">
+                <Image
+                    className="rounded-md size-full object-cover overflow-hidden"
+                    src="/images/common/12.jpg"
+                    width={400}
+                    height={400}
+                    alt="image"
+                    priority
+                />
             </div>
 
             <div className="sticky top-0 h-fit">

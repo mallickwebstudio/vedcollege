@@ -3,25 +3,18 @@ import Section from "@/components/site/section";
 import { CheckCheckIcon } from "lucide-react";
 import Image from "next/image";
 
-export default function Curriculum() {
+export default function Curriculum({data}) {
   return (
     <Section className="bg-secondary">
-      <h2 className="text-center">Why Choose BSW at VED?</h2>
+      <h2 className="text-center">{data.h2}</h2>
 
       <div className="mt-8 grid gap-8 md:grid-cols-2">
         <div className="space-y-4">
-          {[
-            "Integrated preparation for Class 1/2/3 competitive exams",
-            "Expert faculty & guest lectures by government officers",
-            "Field training, social service projects, and internships",
-            "Free hostel & meal facility for eligible students",
-            "Best-in-class academic results with top university ranks",
-            "One-on-one guidance & personal development activities",
-          ].map((item, index) => (
-            <FadeUp delay={index * 0.3} key={index + item}>
+          {data.lists.map((item, index) => (
+            <FadeUp delay={index * 0.1} key={index + item}>
               <div className="flex items-start gap-3 p-4 bg-white rounded-lg shadow-sm">
                 <CheckCheckIcon className="size-5 text-green-600 flex-shrink-0 mt-0.5" />
-                <p className="text-muted-foreground">{item}</p>
+                <p>{item}</p>
               </div>
             </FadeUp>
           ))}

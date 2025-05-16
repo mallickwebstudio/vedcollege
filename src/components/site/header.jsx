@@ -5,10 +5,14 @@ import { cn } from "@/lib/utils";
 import { AlignRight, Mail, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 export default function Header() {
     const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+
+    const path = usePathname();
+    console.log(path)
 
     return (
         <header className="py-2 md:py-0 bg-background md:h-16 border-b">
@@ -37,15 +41,15 @@ export default function Header() {
                     </div>
 
                     <div className={cn(isNavbarOpen ? "flex" : "hidden md:flex", "items-center gap-3")}>
-                        <Link className={buttonVariants({ variant: "ghost" })} href="/bsw">
+                        <Link className={buttonVariants({ variant: path.includes("bsw") ? "secondary" : "ghost" })} href="/course/bsw" onClick={() => setIsNavbarOpen(!isNavbarOpen)}>
                             BSW
                         </Link>
-                        <Link className={buttonVariants({ variant: "ghost" })} href="/msw">
+                        <Link className={buttonVariants({ variant: path.includes("msw") ? "secondary" : "ghost" })} href="/course/msw" onClick={() => setIsNavbarOpen(!isNavbarOpen)}>
                             MSW
                         </Link>
                         <Link className={buttonVariants()} href="#enquiry">
                             <Mail className="size-4" />
-                            Inquire
+                            Enquire
                         </Link>
                     </div>
                 </div>

@@ -1,19 +1,18 @@
-import FadeLeft from "@/animation/fade-left";
-import FadeRight from "@/animation/fade-right";
 import Section from "@/components/site/section";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ArrowRight, CheckCheck } from "lucide-react";
 import Link from "next/link";
 
-export default function Overview() {
+
+export default function page() {
   return (
-    <Section>
+    <main>
+      <Section>
 
-      <h2 className="text-center mb-8">Course Overview</h2>
+        <h2 className="text-center mb-8">Course Overview</h2>
 
-      <div className="grid md:grid-cols-2 gap-8">
-        <FadeRight>
+        <div className="grid md:grid-cols-2 gap-8">
           <div className="p-4 bg-green-100 border border-green-600 rounded-md overflow-hidden">
             <h3>BSW <span className="text-base"> - Bachelor of Social Work</span></h3>
             <ul className="mt-4 space-y-2">
@@ -32,9 +31,7 @@ export default function Overview() {
               <ArrowRight className="size-4 group-hover:ml-2 transition-all" />
             </Link>
           </div>
-        </FadeRight>
 
-        <FadeLeft>
           <div className="p-4 bg-green-100 border border-green-600 rounded-md overflow-hidden">
             <h3>MSW <span className="text-base"> - Master  of Social Work</span></h3>
             <ul className="mt-4 space-y-2">
@@ -53,8 +50,9 @@ export default function Overview() {
               <ArrowRight className="size-4 group-hover:ml-2 transition-all" />
             </Link>
           </div>
-        </FadeLeft>
-      </div>
-    </Section>
+        </div>
+      </Section>
+
+    </main>
   )
 }
