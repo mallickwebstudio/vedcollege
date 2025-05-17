@@ -10,7 +10,7 @@ export default function Hero() {
         <Section className="relative" wrapperClassName="grid md:grid-cols-2 gap-8" id="hero-header">
             <div className="absolute inset-0">
                 <Image
-                    className="h-full object-cover w-1/2 overflow-hidden"
+                    className="h-full object-cover w-full md:w-1/2 overflow-hidden"
                     src="/images/common/15.jpg"
                     width={900}
                     height={1600}

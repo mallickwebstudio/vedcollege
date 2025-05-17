@@ -205,7 +205,7 @@ export default function EnquiryForm() {
             </Form>
             <div className="p-2 border rounded-md">
                 <div className="text-sm capitalize tracking-wider font-bold text-primary">CALL SUPPORT</div>
-                <div className="mt-2 flex items-center gap-4">
+                <div className="mt-2 flex items-center gap-4 flex-wrap">
                     <Link className={buttonVariants({ variant: "secondary" })} href="tel:8238204003">
                         <Phone className="size-4" />
                         8238204003

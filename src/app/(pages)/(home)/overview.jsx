@@ -1,5 +1,6 @@
 import FadeLeft from "@/animation/fade-left";
 import FadeRight from "@/animation/fade-right";
+import FadeUp from "@/animation/fade-up";
 import Section from "@/components/site/section";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -13,7 +14,7 @@ export default function Overview() {
       <h2 className="text-center mb-8">Course Overview</h2>
 
       <div className="grid md:grid-cols-2 gap-8">
-        <FadeRight>
+        <FadeUp>
           <div className="p-4 bg-green-100 border border-green-600 rounded-md overflow-hidden">
             <h3>BSW <span className="text-base"> - Bachelor of Social Work</span></h3>
             <ul className="mt-4 space-y-2">
@@ -32,9 +33,9 @@ export default function Overview() {
               <ArrowRight className="size-4 group-hover:ml-2 transition-all" />
             </Link>
           </div>
-        </FadeRight>
+        </FadeUp>
 
-        <FadeLeft>
+        <FadeUp>
           <div className="p-4 bg-green-100 border border-green-600 rounded-md overflow-hidden">
             <h3>MSW <span className="text-base"> - Master  of Social Work</span></h3>
             <ul className="mt-4 space-y-2">
@@ -53,7 +54,7 @@ export default function Overview() {
               <ArrowRight className="size-4 group-hover:ml-2 transition-all" />
             </Link>
           </div>
-        </FadeLeft>
+        </FadeUp>
       </div>
     </Section>
   )
