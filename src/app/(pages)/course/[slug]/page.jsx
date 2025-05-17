@@ -6,8 +6,8 @@ import Curriculum from "./curriculum"
 import Scope from "./scope"
 import Admission from "./admission"
 
-export default function Page({ params }) {
-    const slug = params.slug.toLowerCase()
+export default async function Page({ params }) {
+    const slug = await params.slug.toLowerCase()
 
     const course = database[slug]
     if (!course) return notFound()

@@ -18,7 +18,7 @@ export default function Hero() {
                     priority
                 />
             </div>
-            <div className="sticky top-4 h-fit z-0">
+            <div className="md:sticky top-4 h-fit z-0">
                 <div className="flex gap-2">
                     <Badge className="font-bold rounded-full">BSW</Badge>
                     <Badge className="font-bold rounded-full">MSW</Badge>
@@ -32,7 +32,7 @@ export default function Hero() {
                 <AdmissionCountdown className="mt-8 border" />
             </div>
 
-            <div className="p-4 bg-secondary rounded-md aspect-square z-10">
+            <div className="relative p-4 bg-secondary w-fit rounded-md">
                 <div className="">
                     <span className="text-sm capitalize tracking-wider font-bold text-primary">ENQUIRY FORM</span>
                     <h2>Have a Questions? Get Personalized Admission Support</h2>

@@ -20,7 +20,7 @@ export default function hero({ data }) {
             priority
           />
         </div>
-        <div className="sticky top-4 h-fit z-10">
+        <div className="relative md:sticky top-4 h-fit z-10">
           <h1>{data.title}</h1>
           <p>{data.description}</p>
           <AdmissionCountdown className="mt-8" />
@@ -34,7 +34,7 @@ export default function hero({ data }) {
         </div>
       </div>
 
-      <div className="p-4 bg-background rounded-md aspect-square z-10">
+      <div className="p-4 bg-background rounded-md">
         <div className="">
           <span className="text-sm capitalize tracking-wider font-bold text-primary">ENQUIRY FORM</span>
           <h2>Have a Questions? Get Personalized Admission Support</h2>

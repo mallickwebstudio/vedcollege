@@ -1,7 +1,5 @@
 
 <footer>Footer</footer>
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { InstagramIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,11 +7,11 @@ import Link from "next/link";
 const footerLinks = [
     {
         title: "BSW",
-        href: "/bsw",
+        href: "/course/bsw",
     },
     {
         title: "MSW",
-        href: "/msw",
+        href: "/course/msw",
     },
 ];
 
